@@ -3,6 +3,10 @@ import LogoDark from '../../images/logo/logo-dark.svg';
 import Logo from '../../images/logo/logo.svg';
 
 const SignUp = () => {
+  function signin(e:any){
+    e.preventDefault();
+    console.log("Hello World!");
+  }
   return (
     <>
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -291,6 +295,7 @@ const SignUp = () => {
                   <input
                     type="submit"
                     value="Create account"
+                    onClick={(e)=>signin(e)}  
                     className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
                   />
                 </div>
